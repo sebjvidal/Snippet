@@ -11,6 +11,11 @@ extension AnyView {
     /// EmptyView
     static let emptyView = AnyView(EmptyView())
     
+    /// AspectRatio
+    static func aspectRatio(from aspectRatio: SNAspectRatio) -> AnyView {
+        return AnyView(_SNButtonAspectRatioView(aspectRatio: aspectRatio))
+    }
+    
     /// Appearance
     static let automaticAppearance = AnyView(_SNButtonAutomaticAppearanceView())
     static let lightAppearance = AnyView(_SNButtonLightAppearanceView())

@@ -8,20 +8,6 @@
 import Cocoa
 
 class SNLabel: NSTextField {
-    // MARK: Init
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
-        font = .systemFont(ofSize: 13)
-        textColor = .labelColor
-        drawsBackground = false
-        isBordered = false
-        isEditable = false
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: Text
     var text: String {
         get {
@@ -30,6 +16,23 @@ class SNLabel: NSTextField {
         
         set {
             stringValue = newValue
+            invalidateIntrinsicContentSize()
+            superview?.layout()
         }
+    }
+    
+    // MARK: Init
+    override init(frame frameRect: NSRect) {
+        super.init(frame: frameRect)
+        font = .systemFont(ofSize: 13)
+        textColor = .labelColor
+        drawsBackground = false
+        isBordered = false
+        isEditable = false
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

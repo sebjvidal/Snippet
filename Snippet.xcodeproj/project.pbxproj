@@ -54,17 +54,42 @@
 		C226EAAC286B68620084BD60 /* SNCanvasBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226EAAB286B68620084BD60 /* SNCanvasBackgroundView.swift */; };
 		C226EAB1286B9A190084BD60 /* ToolbarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226EAB0286B9A190084BD60 /* ToolbarManager.swift */; };
 		C226EAB5286B9D930084BD60 /* NSWindow.StyleMask+DefaultStyleMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226EAB4286B9D930084BD60 /* NSWindow.StyleMask+DefaultStyleMask.swift */; };
+		C22C8DDC2886DC2D0069A103 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = C22C8DDB2886DC2D0069A103 /* Splash */; };
+		C22C8DED28870CA60069A103 /* SNBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8DEC28870CA60069A103 /* SNBackground.swift */; };
+		C22C8DF0288711760069A103 /* NSView+BackgroundColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8DEF288711760069A103 /* NSView+BackgroundColour.swift */; };
+		C22C8DF328873FCD0069A103 /* CacheManager+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8DF228873FCD0069A103 /* CacheManager+Window.swift */; };
+		C22C8DF5288852040069A103 /* CanvasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8DF4288852040069A103 /* CanvasManager.swift */; };
+		C22C8DFA28893A230069A103 /* NSButton+IsOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8DF928893A230069A103 /* NSButton+IsOn.swift */; };
+		C22C8E1C288ADB590069A103 /* Float+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8E1B288ADB590069A103 /* Float+CGFloat.swift */; };
+		C22C8E1F288B09470069A103 /* NSSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C8E1E288B09470069A103 /* NSSwitch.swift */; };
+		C23A7A85289C496F00E94001 /* SNInLineMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A7A84289C496F00E94001 /* SNInLineMessage.swift */; };
+		C23A7A88289C595600E94001 /* SNNewPresetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A7A87289C595600E94001 /* SNNewPresetViewController.swift */; };
+		C23A7A8B289D8C3A00E94001 /* SNColourPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A7A8A289D8C3A00E94001 /* SNColourPickerDelegate.swift */; };
+		C23A7A8E289D926400E94001 /* NSRect+With.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A7A8D289D926400E94001 /* NSRect+With.swift */; };
+		C23AF266288B1BA40032EF88 /* CacheManager+Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AF265288B1BA40032EF88 /* CacheManager+Editor.swift */; };
+		C23AF269288D52410032EF88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23AF268288D52410032EF88 /* MainMenu.xib */; };
+		C23AF276288D58190032EF88 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF26C288D58190032EF88 /* JetBrainsMono-Regular.ttf */; };
+		C23AF277288D58190032EF88 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF26D288D58190032EF88 /* RobotoMono-Regular.ttf */; };
+		C23AF278288D58190032EF88 /* FiraCode-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF26E288D58190032EF88 /* FiraCode-Regular.ttf */; };
+		C23AF279288D58190032EF88 /* Menlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF26F288D58190032EF88 /* Menlo-Regular.ttf */; };
+		C23AF27A288D58190032EF88 /* cour.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF270288D58190032EF88 /* cour.ttf */; };
+		C23AF27B288D58190032EF88 /* ANDALEMO.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C23AF271288D58190032EF88 /* ANDALEMO.TTF */; };
+		C23AF27C288D58190032EF88 /* SourceCodePro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF272288D58190032EF88 /* SourceCodePro-Regular.ttf */; };
+		C23AF27D288D58190032EF88 /* Anonymous Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF273288D58190032EF88 /* Anonymous Pro.ttf */; };
+		C23AF27E288D58190032EF88 /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF274288D58190032EF88 /* UbuntuMono-R.ttf */; };
+		C23AF27F288D58190032EF88 /* SFMonoRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C23AF275288D58190032EF88 /* SFMonoRegular.otf */; };
+		C23AF284288D62510032EF88 /* SNIntegerNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AF283288D62510032EF88 /* SNIntegerNumberFormatter.swift */; };
+		C23AF287288D6FD60032EF88 /* SNWatermarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AF286288D6FD60032EF88 /* SNWatermarkView.swift */; };
+		C23AF28D288D8E710032EF88 /* UserDefaults+SNGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AF28C288D8E710032EF88 /* UserDefaults+SNGradient.swift */; };
+		C23AF28F288D94860032EF88 /* SNBackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AF28E288D94860032EF88 /* SNBackgroundType.swift */; };
+		C23AF292288DCAAC0032EF88 /* SNSizeAspectRatioSettingsTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AF291288DCAAC0032EF88 /* SNSizeAspectRatioSettingsTableCellView.swift */; };
 		C270DA7F2870A133004F987B /* SNSettingsBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA7E2870A133004F987B /* SNSettingsBackgroundView.swift */; };
 		C270DA812870A226004F987B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA802870A226004F987B /* CacheManager.swift */; };
 		C270DA842870A23D004F987B /* PresetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA832870A23D004F987B /* PresetManager.swift */; };
 		C270DA872870A2B2004F987B /* CacheManager+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA862870A2B2004F987B /* CacheManager+Background.swift */; };
-		C270DA8B2870A7D4004F987B /* SNBackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA8A2870A7D4004F987B /* SNBackgroundType.swift */; };
 		C270DA8D2870A83D004F987B /* SNGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA8C2870A83D004F987B /* SNGradient.swift */; };
 		C270DA902870BFB6004F987B /* RGB+HSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA8F2870BFB6004F987B /* RGB+HSV.swift */; };
 		C270DA932870C0A1004F987B /* CAGradientLayer+CalculatePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA922870C0A1004F987B /* CAGradientLayer+CalculatePoints.swift */; };
-		C270DA962870C41E004F987B /* SNBackgroundGradientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA952870C41E004F987B /* SNBackgroundGradientType.swift */; };
-		C270DA982870C436004F987B /* SNBackgroundImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA972870C436004F987B /* SNBackgroundImageType.swift */; };
-		C270DA9A2870C8BD004F987B /* SNBackgroundColourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA992870C8BD004F987B /* SNBackgroundColourType.swift */; };
 		C270DA9C28717EF6004F987B /* SNSolidColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA9B28717EF6004F987B /* SNSolidColour.swift */; };
 		C270DA9F28717F72004F987B /* SNImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DA9E28717F72004F987B /* SNImage.swift */; };
 		C270DAA328719BDF004F987B /* SNSettingsToolbarSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DAA228719BDF004F987B /* SNSettingsToolbarSeparatorView.swift */; };
@@ -73,6 +98,12 @@
 		C270DAAD287364B6004F987B /* SNLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270DAAC287364B6004F987B /* SNLabel.swift */; };
 		C2823A2E286CF84E007B1CF1 /* SNWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2823A2D286CF84E007B1CF1 /* SNWelcomeViewController.swift */; };
 		C2823A30286CF90A007B1CF1 /* UserDefaults+KeyExists.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2823A2F286CF90A007B1CF1 /* UserDefaults+KeyExists.swift */; };
+		C29FE271288DD13F007473F3 /* SNAspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FE270288DD13F007473F3 /* SNAspectRatio.swift */; };
+		C29FE275288DD776007473F3 /* SNButtonAspectRatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FE274288DD776007473F3 /* SNButtonAspectRatioView.swift */; };
+		C29FE27A288EF623007473F3 /* SNWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FE279288EF623007473F3 /* SNWindowView.swift */; };
+		C29FE27D288EFBF3007473F3 /* SNDynamicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FE27C288EFBF3007473F3 /* SNDynamicImage.swift */; };
+		C29FE2802891A330007473F3 /* UserDefaults+SNSolidColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FE27F2891A330007473F3 /* UserDefaults+SNSolidColour.swift */; };
+		C29FE2822891A5AA007473F3 /* UserDefaults+SNImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29FE2812891A5AA007473F3 /* UserDefaults+SNImage.swift */; };
 		C2C41879288087980080EC6A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C2C41878288087980080EC6A /* Kingfisher */; };
 		C2C4187C2880A5130080EC6A /* SNButtonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4187B2880A5130080EC6A /* SNButtonImageView.swift */; };
 		C2C4187F2881C18B0080EC6A /* NSAnimationContext+RunAnimationGroupAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4187E2881C18B0080EC6A /* NSAnimationContext+RunAnimationGroupAfter.swift */; };
@@ -87,6 +118,13 @@
 		C2E51BA1286EF9C30001A0B8 /* SNBackgroundSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E51BA0286EF9C30001A0B8 /* SNBackgroundSettingsViewController.swift */; };
 		C2E51BA3286EF9DC0001A0B8 /* SNSizeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E51BA2286EF9DC0001A0B8 /* SNSizeSettingsViewController.swift */; };
 		C2E51BA9286EFA580001A0B8 /* SNWatermarkSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E51BA8286EFA580001A0B8 /* SNWatermarkSettingsViewController.swift */; };
+		C2F080C828944991001E453B /* CacheManager+Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080C728944991001E453B /* CacheManager+Canvas.swift */; };
+		C2F080CC28967E98001E453B /* CacheManager+CanvasSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080CB28967E98001E453B /* CacheManager+CanvasSize.swift */; };
+		C2F080CE28967F28001E453B /* UserDefaults+SNAspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080CD28967F28001E453B /* UserDefaults+SNAspectRatio.swift */; };
+		C2F080D028968300001E453B /* SNSizeCustomSettingsTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080CF28968300001E453B /* SNSizeCustomSettingsTableCellView.swift */; };
+		C2F080D4289706A3001E453B /* SNClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080D3289706A3001E453B /* SNClipView.swift */; };
+		C2F080D728970D22001E453B /* SNCanvasScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080D628970D22001E453B /* SNCanvasScrollView.swift */; };
+		C2F080DA2897C31C001E453B /* SNColourPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F080D92897C31C001E453B /* SNColourPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,7 +163,6 @@
 		C20AD34F287DFE2500DCF3E2 /* SNGradientGrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGradientGrip.swift; sourceTree = "<group>"; };
 		C20AD35428806F4800DCF3E2 /* SNGradientGripDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGradientGripDelegate.swift; sourceTree = "<group>"; };
 		C20AD3562880743200DCF3E2 /* SNBackgroundSettingsImageTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundSettingsImageTableCellView.swift; sourceTree = "<group>"; };
-		C20CD03C2885EA2100067474 /* Splash */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Splash; path = ../../Packages/Splash; sourceTree = "<group>"; };
 		C226EA522864EA190084BD60 /* Snippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C226EA552864EA190084BD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C226EA592864EA1A0084BD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,17 +177,43 @@
 		C226EAAB286B68620084BD60 /* SNCanvasBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCanvasBackgroundView.swift; sourceTree = "<group>"; };
 		C226EAB0286B9A190084BD60 /* ToolbarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarManager.swift; sourceTree = "<group>"; };
 		C226EAB4286B9D930084BD60 /* NSWindow.StyleMask+DefaultStyleMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow.StyleMask+DefaultStyleMask.swift"; sourceTree = "<group>"; };
+		C22C8DD82885F67F0069A103 /* Splash */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Splash; path = ../../Packages/Splash; sourceTree = "<group>"; };
+		C22C8DEC28870CA60069A103 /* SNBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackground.swift; sourceTree = "<group>"; };
+		C22C8DEF288711760069A103 /* NSView+BackgroundColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+BackgroundColour.swift"; sourceTree = "<group>"; };
+		C22C8DF228873FCD0069A103 /* CacheManager+Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheManager+Window.swift"; sourceTree = "<group>"; };
+		C22C8DF4288852040069A103 /* CanvasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasManager.swift; sourceTree = "<group>"; };
+		C22C8DF928893A230069A103 /* NSButton+IsOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+IsOn.swift"; sourceTree = "<group>"; };
+		C22C8E1B288ADB590069A103 /* Float+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+CGFloat.swift"; sourceTree = "<group>"; };
+		C22C8E1E288B09470069A103 /* NSSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSwitch.swift; sourceTree = "<group>"; };
+		C23A7A84289C496F00E94001 /* SNInLineMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNInLineMessage.swift; sourceTree = "<group>"; };
+		C23A7A87289C595600E94001 /* SNNewPresetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNewPresetViewController.swift; sourceTree = "<group>"; };
+		C23A7A8A289D8C3A00E94001 /* SNColourPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNColourPickerDelegate.swift; sourceTree = "<group>"; };
+		C23A7A8D289D926400E94001 /* NSRect+With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRect+With.swift"; sourceTree = "<group>"; };
+		C23AF265288B1BA40032EF88 /* CacheManager+Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheManager+Editor.swift"; sourceTree = "<group>"; };
+		C23AF268288D52410032EF88 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		C23AF26C288D58190032EF88 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
+		C23AF26D288D58190032EF88 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
+		C23AF26E288D58190032EF88 /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Regular.ttf"; sourceTree = "<group>"; };
+		C23AF26F288D58190032EF88 /* Menlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Menlo-Regular.ttf"; sourceTree = "<group>"; };
+		C23AF270288D58190032EF88 /* cour.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cour.ttf; sourceTree = "<group>"; };
+		C23AF271288D58190032EF88 /* ANDALEMO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ANDALEMO.TTF; sourceTree = "<group>"; };
+		C23AF272288D58190032EF88 /* SourceCodePro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Regular.ttf"; sourceTree = "<group>"; };
+		C23AF273288D58190032EF88 /* Anonymous Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anonymous Pro.ttf"; sourceTree = "<group>"; };
+		C23AF274288D58190032EF88 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-R.ttf"; sourceTree = "<group>"; };
+		C23AF275288D58190032EF88 /* SFMonoRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFMonoRegular.otf; sourceTree = "<group>"; };
+		C23AF280288D58B10032EF88 /* Snippet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Snippet-Info.plist"; sourceTree = "<group>"; };
+		C23AF283288D62510032EF88 /* SNIntegerNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNIntegerNumberFormatter.swift; sourceTree = "<group>"; };
+		C23AF286288D6FD60032EF88 /* SNWatermarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNWatermarkView.swift; sourceTree = "<group>"; };
+		C23AF28C288D8E710032EF88 /* UserDefaults+SNGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SNGradient.swift"; sourceTree = "<group>"; };
+		C23AF28E288D94860032EF88 /* SNBackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundType.swift; sourceTree = "<group>"; };
+		C23AF291288DCAAC0032EF88 /* SNSizeAspectRatioSettingsTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSizeAspectRatioSettingsTableCellView.swift; sourceTree = "<group>"; };
 		C270DA7E2870A133004F987B /* SNSettingsBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSettingsBackgroundView.swift; sourceTree = "<group>"; };
 		C270DA802870A226004F987B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		C270DA832870A23D004F987B /* PresetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetManager.swift; sourceTree = "<group>"; };
 		C270DA862870A2B2004F987B /* CacheManager+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheManager+Background.swift"; sourceTree = "<group>"; };
-		C270DA8A2870A7D4004F987B /* SNBackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundType.swift; sourceTree = "<group>"; };
 		C270DA8C2870A83D004F987B /* SNGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGradient.swift; sourceTree = "<group>"; };
 		C270DA8F2870BFB6004F987B /* RGB+HSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGB+HSV.swift"; sourceTree = "<group>"; };
 		C270DA922870C0A1004F987B /* CAGradientLayer+CalculatePoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+CalculatePoints.swift"; sourceTree = "<group>"; };
-		C270DA952870C41E004F987B /* SNBackgroundGradientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundGradientType.swift; sourceTree = "<group>"; };
-		C270DA972870C436004F987B /* SNBackgroundImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundImageType.swift; sourceTree = "<group>"; };
-		C270DA992870C8BD004F987B /* SNBackgroundColourType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundColourType.swift; sourceTree = "<group>"; };
 		C270DA9B28717EF6004F987B /* SNSolidColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSolidColour.swift; sourceTree = "<group>"; };
 		C270DA9E28717F72004F987B /* SNImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNImage.swift; sourceTree = "<group>"; };
 		C270DAA228719BDF004F987B /* SNSettingsToolbarSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSettingsToolbarSeparatorView.swift; sourceTree = "<group>"; };
@@ -159,6 +222,12 @@
 		C270DAAC287364B6004F987B /* SNLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNLabel.swift; sourceTree = "<group>"; };
 		C2823A2D286CF84E007B1CF1 /* SNWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNWelcomeViewController.swift; sourceTree = "<group>"; };
 		C2823A2F286CF90A007B1CF1 /* UserDefaults+KeyExists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+KeyExists.swift"; sourceTree = "<group>"; };
+		C29FE270288DD13F007473F3 /* SNAspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNAspectRatio.swift; sourceTree = "<group>"; };
+		C29FE274288DD776007473F3 /* SNButtonAspectRatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNButtonAspectRatioView.swift; sourceTree = "<group>"; };
+		C29FE279288EF623007473F3 /* SNWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNWindowView.swift; sourceTree = "<group>"; };
+		C29FE27C288EFBF3007473F3 /* SNDynamicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNDynamicImage.swift; sourceTree = "<group>"; };
+		C29FE27F2891A330007473F3 /* UserDefaults+SNSolidColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SNSolidColour.swift"; sourceTree = "<group>"; };
+		C29FE2812891A5AA007473F3 /* UserDefaults+SNImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SNImage.swift"; sourceTree = "<group>"; };
 		C2C4187B2880A5130080EC6A /* SNButtonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNButtonImageView.swift; sourceTree = "<group>"; };
 		C2C4187E2881C18B0080EC6A /* NSAnimationContext+RunAnimationGroupAfter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAnimationContext+RunAnimationGroupAfter.swift"; sourceTree = "<group>"; };
 		C2C41881288431DE0080EC6A /* SNImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNImageView.swift; sourceTree = "<group>"; };
@@ -167,12 +236,18 @@
 		C2C4188828843F410080EC6A /* SNCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCanvasView.swift; sourceTree = "<group>"; };
 		C2C4188B288453090080EC6A /* SNTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTextView.swift; sourceTree = "<group>"; };
 		C2C4188E2885C1A90080EC6A /* SNWindowControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNWindowControl.swift; sourceTree = "<group>"; };
-		C2C418972885E6DE0080EC6A /* Splash */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Splash; path = ../../Packages/Splash; sourceTree = "<group>"; };
 		C2E51B9C286EF98F0001A0B8 /* SNWindowSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNWindowSettingsViewController.swift; sourceTree = "<group>"; };
 		C2E51B9E286EF9AE0001A0B8 /* SNEditorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNEditorSettingsViewController.swift; sourceTree = "<group>"; };
 		C2E51BA0286EF9C30001A0B8 /* SNBackgroundSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNBackgroundSettingsViewController.swift; sourceTree = "<group>"; };
 		C2E51BA2286EF9DC0001A0B8 /* SNSizeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSizeSettingsViewController.swift; sourceTree = "<group>"; };
 		C2E51BA8286EFA580001A0B8 /* SNWatermarkSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNWatermarkSettingsViewController.swift; sourceTree = "<group>"; };
+		C2F080C728944991001E453B /* CacheManager+Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheManager+Canvas.swift"; sourceTree = "<group>"; };
+		C2F080CB28967E98001E453B /* CacheManager+CanvasSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheManager+CanvasSize.swift"; sourceTree = "<group>"; };
+		C2F080CD28967F28001E453B /* UserDefaults+SNAspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SNAspectRatio.swift"; sourceTree = "<group>"; };
+		C2F080CF28968300001E453B /* SNSizeCustomSettingsTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSizeCustomSettingsTableCellView.swift; sourceTree = "<group>"; };
+		C2F080D3289706A3001E453B /* SNClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNClipView.swift; sourceTree = "<group>"; };
+		C2F080D628970D22001E453B /* SNCanvasScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCanvasScrollView.swift; sourceTree = "<group>"; };
+		C2F080D92897C31C001E453B /* SNColourPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNColourPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2C41879288087980080EC6A /* Kingfisher in Frameworks */,
+				C22C8DDC2886DC2D0069A103 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +282,8 @@
 		C20AD3022874775F00DCF3E2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				C22C8DEE28870CA90069A103 /* SNBackground */,
+				C23A7A8C289D8C4000E94001 /* SNColourPickerDelegate */,
 				C20AD3032874776500DCF3E2 /* SNSettingsTableCellView */,
 			);
 			path = Protocols;
@@ -268,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				C20AD333287AEC9C00DCF3E2 /* Appearance */,
+				C29FE276288DD77A007473F3 /* AspectRatio */,
 				C20AD33A287AEF0C00DCF3E2 /* Controls */,
 				C20AD341287B0E2200DCF3E2 /* Colour */,
 				C20AD348287B684B00DCF3E2 /* Gradient */,
@@ -337,18 +416,11 @@
 			path = SNGradientGrip;
 			sourceTree = "<group>";
 		};
-		C20CD03B2885EA2100067474 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				C20CD03C2885EA2100067474 /* Splash */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		C226EA492864EA190084BD60 = {
 			isa = PBXGroup;
 			children = (
-				C20CD03B2885EA2100067474 /* Packages */,
+				C23AF280288D58B10032EF88 /* Snippet-Info.plist */,
+				C22C8DD72885F67F0069A103 /* Packages */,
 				C226EA542864EA190084BD60 /* Snippet 2 */,
 				C226EA532864EA190084BD60 /* Products */,
 				C2C418942885DF810080EC6A /* Frameworks */,
@@ -389,11 +461,16 @@
 				C20AD31128760E1100DCF3E2 /* ButtonStyle */,
 				C270DA942870C0A5004F987B /* CAGradientLayer */,
 				C226EA6A286600EF0084BD60 /* CGRect */,
+				C22C8E1D288ADB5E0069A103 /* Float */,
 				C2C418802881C1950080EC6A /* NSAnimationContext */,
 				C20AD31D2876D0EB00DCF3E2 /* NSAppearance */,
+				C22C8DFB28893AB10069A103 /* NSButton */,
 				C20AD31A287634F500DCF3E2 /* NSFont */,
 				C226EA932869FD0A0084BD60 /* NSImage */,
 				C20AD34E287D798A00DCF3E2 /* NSImageView */,
+				C23A7A8F289DB22900E94001 /* NSRect */,
+				C23AF288288D82FC0032EF88 /* NSSwitch */,
+				C22C8DF12887117C0069A103 /* NSView */,
 				C226EAB7286B9DA10084BD60 /* NSWindow */,
 				C2823A31286CF90E007B1CF1 /* UserDefaults */,
 			);
@@ -403,9 +480,10 @@
 		C226EA6D286601100084BD60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C226EA592864EA1A0084BD60 /* Assets.xcassets */,
+				C23AF267288D44140032EF88 /* Assets */,
 				C270DA892870A7B1004F987B /* Enums */,
 				C226EA6C286600FC0084BD60 /* Extensions */,
+				C23AF26B288D58190032EF88 /* Fonts */,
 				C226EAB2286B9A260084BD60 /* Managers */,
 				C20AD3022874775F00DCF3E2 /* Protocols */,
 				C270DA882870A7A4004F987B /* Types */,
@@ -426,6 +504,7 @@
 			children = (
 				C226EA98286A4BA30084BD60 /* Main */,
 				C226EA552864EA190084BD60 /* AppDelegate.swift */,
+				C23AF26A288D53B50032EF88 /* Menu */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -433,13 +512,15 @@
 		C226EA95286A49B30084BD60 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				C2823A2C286CF84E007B1CF1 /* WelcomeViewController */,
-				C226EA96286A49BA0084BD60 /* SplitViewController */,
+				C2F080DB2897C328001E453B /* SNColourPickerViewController */,
+				C2823A2C286CF84E007B1CF1 /* SNWelcomeViewController */,
+				C226EA96286A49BA0084BD60 /* SNSplitViewController */,
+				C23A7A89289C595F00E94001 /* SNNewPresetViewController */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
-		C226EA96286A49BA0084BD60 /* SplitViewController */ = {
+		C226EA96286A49BA0084BD60 /* SNSplitViewController */ = {
 			isa = PBXGroup;
 			children = (
 				C226EA642864EAA40084BD60 /* SNSplitViewController.swift */,
@@ -447,7 +528,7 @@
 				C226EA97286A49C20084BD60 /* CanvasViewController */,
 				C226EA9B286A4C3D0084BD60 /* SettingsViewController */,
 			);
-			path = SplitViewController;
+			path = SNSplitViewController;
 			sourceTree = "<group>";
 		};
 		C226EA97286A49C20084BD60 /* CanvasViewController */ = {
@@ -496,6 +577,7 @@
 			isa = PBXGroup;
 			children = (
 				C270DA822870A22A004F987B /* CacheManager */,
+				C22C8DF62888520A0069A103 /* CanvasManager */,
 				C270DA852870A243004F987B /* PresetManager */,
 				C226EAB3286B9A340084BD60 /* ToolbarManager */,
 			);
@@ -526,11 +608,152 @@
 			path = NSWindow;
 			sourceTree = "<group>";
 		};
+		C22C8DD72885F67F0069A103 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8DD82885F67F0069A103 /* Splash */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C22C8DEE28870CA90069A103 /* SNBackground */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8DEC28870CA60069A103 /* SNBackground.swift */,
+			);
+			path = SNBackground;
+			sourceTree = "<group>";
+		};
+		C22C8DF12887117C0069A103 /* NSView */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8DEF288711760069A103 /* NSView+BackgroundColour.swift */,
+			);
+			path = NSView;
+			sourceTree = "<group>";
+		};
+		C22C8DF62888520A0069A103 /* CanvasManager */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8DF4288852040069A103 /* CanvasManager.swift */,
+			);
+			path = CanvasManager;
+			sourceTree = "<group>";
+		};
+		C22C8DFB28893AB10069A103 /* NSButton */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8DF928893A230069A103 /* NSButton+IsOn.swift */,
+			);
+			path = NSButton;
+			sourceTree = "<group>";
+		};
+		C22C8E1D288ADB5E0069A103 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8E1B288ADB590069A103 /* Float+CGFloat.swift */,
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
+		C23A7A86289C4AF400E94001 /* SNInLineMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C23A7A84289C496F00E94001 /* SNInLineMessage.swift */,
+			);
+			path = SNInLineMessage;
+			sourceTree = "<group>";
+		};
+		C23A7A89289C595F00E94001 /* SNNewPresetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C23A7A87289C595600E94001 /* SNNewPresetViewController.swift */,
+			);
+			path = SNNewPresetViewController;
+			sourceTree = "<group>";
+		};
+		C23A7A8C289D8C4000E94001 /* SNColourPickerDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C23A7A8A289D8C3A00E94001 /* SNColourPickerDelegate.swift */,
+			);
+			path = SNColourPickerDelegate;
+			sourceTree = "<group>";
+		};
+		C23A7A8F289DB22900E94001 /* NSRect */ = {
+			isa = PBXGroup;
+			children = (
+				C23A7A8D289D926400E94001 /* NSRect+With.swift */,
+			);
+			path = NSRect;
+			sourceTree = "<group>";
+		};
+		C23AF267288D44140032EF88 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C226EA592864EA1A0084BD60 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C23AF26A288D53B50032EF88 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C23AF268288D52410032EF88 /* MainMenu.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C23AF26B288D58190032EF88 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C23AF271288D58190032EF88 /* ANDALEMO.TTF */,
+				C23AF273288D58190032EF88 /* Anonymous Pro.ttf */,
+				C23AF270288D58190032EF88 /* cour.ttf */,
+				C23AF26E288D58190032EF88 /* FiraCode-Regular.ttf */,
+				C23AF26C288D58190032EF88 /* JetBrainsMono-Regular.ttf */,
+				C23AF26F288D58190032EF88 /* Menlo-Regular.ttf */,
+				C23AF275288D58190032EF88 /* SFMonoRegular.otf */,
+				C23AF26D288D58190032EF88 /* RobotoMono-Regular.ttf */,
+				C23AF272288D58190032EF88 /* SourceCodePro-Regular.ttf */,
+				C23AF274288D58190032EF88 /* UbuntuMono-R.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C23AF285288D625A0032EF88 /* IntegerNumberFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				C23AF283288D62510032EF88 /* SNIntegerNumberFormatter.swift */,
+			);
+			path = IntegerNumberFormatter;
+			sourceTree = "<group>";
+		};
+		C23AF288288D82FC0032EF88 /* NSSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				C22C8E1E288B09470069A103 /* NSSwitch.swift */,
+			);
+			path = NSSwitch;
+			sourceTree = "<group>";
+		};
+		C23AF290288D94B70032EF88 /* SNBackgroundType */ = {
+			isa = PBXGroup;
+			children = (
+				C23AF28E288D94860032EF88 /* SNBackgroundType.swift */,
+			);
+			path = SNBackgroundType;
+			sourceTree = "<group>";
+		};
 		C270DA822870A22A004F987B /* CacheManager */ = {
 			isa = PBXGroup;
 			children = (
 				C270DA802870A226004F987B /* CacheManager.swift */,
+				C2F080C728944991001E453B /* CacheManager+Canvas.swift */,
+				C22C8DF228873FCD0069A103 /* CacheManager+Window.swift */,
+				C23AF265288B1BA40032EF88 /* CacheManager+Editor.swift */,
 				C270DA862870A2B2004F987B /* CacheManager+Background.swift */,
+				C2F080CB28967E98001E453B /* CacheManager+CanvasSize.swift */,
 			);
 			path = CacheManager;
 			sourceTree = "<group>";
@@ -546,12 +769,18 @@
 		C270DA882870A7A4004F987B /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				C23AF285288D625A0032EF88 /* IntegerNumberFormatter */,
 				C270DA912870BFBB004F987B /* RGB+HSV */,
+				C29FE273288DD15F007473F3 /* SNAspectRatio */,
 				C20AD30C2875F83400DCF3E2 /* SNButton */,
+				C2F080D828970D2E001E453B /* SNCanvasScrollView */,
 				C2C4188A288440DD0080EC6A /* SNCanvasView */,
+				C2F080D5289706AD001E453B /* SNClipView */,
+				C29FE27E288EFBFC007473F3 /* SNDynamicImage */,
 				C270DA8E2870A88E004F987B /* SNGradient */,
 				C20AD34B287D789000DCF3E2 /* SNGradientEditor */,
 				C20AD35328806F3000DCF3E2 /* SNGradientGrip */,
+				C23A7A86289C4AF400E94001 /* SNInLineMessage */,
 				C270DAA428723A95004F987B /* SNImage */,
 				C2C41883288431E20080EC6A /* SNImageView */,
 				C20AD2FA287427F400DCF3E2 /* SNLabel */,
@@ -559,7 +788,9 @@
 				C270DA9D28717F59004F987B /* SNSolidColour */,
 				C20AD2FD2874759100DCF3E2 /* SNTableViewController */,
 				C2C4188D288453190080EC6A /* SNTextView */,
+				C29FE272288DD156007473F3 /* SNWatermarkView */,
 				C2C418902885D9C20080EC6A /* SNWindowControl */,
+				C29FE27B288EF641007473F3 /* SNWindowView */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -567,10 +798,7 @@
 		C270DA892870A7B1004F987B /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				C270DA8A2870A7D4004F987B /* SNBackgroundType.swift */,
-				C270DA992870C8BD004F987B /* SNBackgroundColourType.swift */,
-				C270DA952870C41E004F987B /* SNBackgroundGradientType.swift */,
-				C270DA972870C436004F987B /* SNBackgroundImageType.swift */,
+				C23AF290288D94B70032EF88 /* SNBackgroundType */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -623,20 +851,64 @@
 			path = SNScrollView;
 			sourceTree = "<group>";
 		};
-		C2823A2C286CF84E007B1CF1 /* WelcomeViewController */ = {
+		C2823A2C286CF84E007B1CF1 /* SNWelcomeViewController */ = {
 			isa = PBXGroup;
 			children = (
 				C2823A2D286CF84E007B1CF1 /* SNWelcomeViewController.swift */,
 			);
-			path = WelcomeViewController;
+			path = SNWelcomeViewController;
 			sourceTree = "<group>";
 		};
 		C2823A31286CF90E007B1CF1 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
 				C2823A2F286CF90A007B1CF1 /* UserDefaults+KeyExists.swift */,
+				C2F080CD28967F28001E453B /* UserDefaults+SNAspectRatio.swift */,
+				C23AF28C288D8E710032EF88 /* UserDefaults+SNGradient.swift */,
+				C29FE2812891A5AA007473F3 /* UserDefaults+SNImage.swift */,
+				C29FE27F2891A330007473F3 /* UserDefaults+SNSolidColour.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		C29FE272288DD156007473F3 /* SNWatermarkView */ = {
+			isa = PBXGroup;
+			children = (
+				C23AF286288D6FD60032EF88 /* SNWatermarkView.swift */,
+			);
+			path = SNWatermarkView;
+			sourceTree = "<group>";
+		};
+		C29FE273288DD15F007473F3 /* SNAspectRatio */ = {
+			isa = PBXGroup;
+			children = (
+				C29FE270288DD13F007473F3 /* SNAspectRatio.swift */,
+			);
+			path = SNAspectRatio;
+			sourceTree = "<group>";
+		};
+		C29FE276288DD77A007473F3 /* AspectRatio */ = {
+			isa = PBXGroup;
+			children = (
+				C29FE274288DD776007473F3 /* SNButtonAspectRatioView.swift */,
+			);
+			path = AspectRatio;
+			sourceTree = "<group>";
+		};
+		C29FE27B288EF641007473F3 /* SNWindowView */ = {
+			isa = PBXGroup;
+			children = (
+				C29FE279288EF623007473F3 /* SNWindowView.swift */,
+			);
+			path = SNWindowView;
+			sourceTree = "<group>";
+		};
+		C29FE27E288EFBFC007473F3 /* SNDynamicImage */ = {
+			isa = PBXGroup;
+			children = (
+				C29FE27C288EFBF3007473F3 /* SNDynamicImage.swift */,
+			);
+			path = SNDynamicImage;
 			sourceTree = "<group>";
 		};
 		C2C4187D2880A5AA0080EC6A /* Image */ = {
@@ -690,7 +962,6 @@
 		C2C418942885DF810080EC6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2C418972885E6DE0080EC6A /* Splash */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -700,8 +971,8 @@
 			children = (
 				C2E51B9C286EF98F0001A0B8 /* SNWindowSettingsViewController.swift */,
 				C20AD30628747E7A00DCF3E2 /* SNWindowSettingsTitleTableCellView.swift */,
-				C20AD3082874963700DCF3E2 /* SNWindowSettingsAppearanceTableCellView.swift */,
 				C20AD3122876247500DCF3E2 /* SNWindowSettingsControlsTableCellView.swift */,
+				C20AD3082874963700DCF3E2 /* SNWindowSettingsAppearanceTableCellView.swift */,
 				C20AD314287626EE00DCF3E2 /* SNWindowSettingsOpacityTableCellView.swift */,
 				C20AD31628762E3D00DCF3E2 /* SNWindowSettingsPaddingTableCellView.swift */,
 			);
@@ -736,6 +1007,8 @@
 			isa = PBXGroup;
 			children = (
 				C2E51BA2286EF9DC0001A0B8 /* SNSizeSettingsViewController.swift */,
+				C23AF291288DCAAC0032EF88 /* SNSizeAspectRatioSettingsTableCellView.swift */,
+				C2F080CF28968300001E453B /* SNSizeCustomSettingsTableCellView.swift */,
 			);
 			path = Size;
 			sourceTree = "<group>";
@@ -746,6 +1019,30 @@
 				C2E51BA8286EFA580001A0B8 /* SNWatermarkSettingsViewController.swift */,
 			);
 			path = Watermark;
+			sourceTree = "<group>";
+		};
+		C2F080D5289706AD001E453B /* SNClipView */ = {
+			isa = PBXGroup;
+			children = (
+				C2F080D3289706A3001E453B /* SNClipView.swift */,
+			);
+			path = SNClipView;
+			sourceTree = "<group>";
+		};
+		C2F080D828970D2E001E453B /* SNCanvasScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C2F080D628970D22001E453B /* SNCanvasScrollView.swift */,
+			);
+			path = SNCanvasScrollView;
+			sourceTree = "<group>";
+		};
+		C2F080DB2897C328001E453B /* SNColourPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2F080D92897C31C001E453B /* SNColourPickerViewController.swift */,
+			);
+			path = SNColourPickerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -766,6 +1063,7 @@
 			name = Snippet;
 			packageProductDependencies = (
 				C2C41878288087980080EC6A /* Kingfisher */,
+				C22C8DDB2886DC2D0069A103 /* Splash */,
 			);
 			productName = "Snippet 2";
 			productReference = C226EA522864EA190084BD60 /* Snippet.app */;
@@ -797,7 +1095,6 @@
 			mainGroup = C226EA492864EA190084BD60;
 			packageReferences = (
 				C2C41877288087980080EC6A /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				C2C418982885E75A0080EC6A /* XCRemoteSwiftPackageReference "Splash" */,
 			);
 			productRefGroup = C226EA532864EA190084BD60 /* Products */;
 			projectDirPath = "";
@@ -814,6 +1111,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C226EA5A2864EA1A0084BD60 /* Assets.xcassets in Resources */,
+				C23AF27E288D58190032EF88 /* UbuntuMono-R.ttf in Resources */,
+				C23AF27C288D58190032EF88 /* SourceCodePro-Regular.ttf in Resources */,
+				C23AF27B288D58190032EF88 /* ANDALEMO.TTF in Resources */,
+				C23AF279288D58190032EF88 /* Menlo-Regular.ttf in Resources */,
+				C23AF269288D52410032EF88 /* MainMenu.xib in Resources */,
+				C23AF278288D58190032EF88 /* FiraCode-Regular.ttf in Resources */,
+				C23AF27A288D58190032EF88 /* cour.ttf in Resources */,
+				C23AF27F288D58190032EF88 /* SFMonoRegular.otf in Resources */,
+				C23AF276288D58190032EF88 /* JetBrainsMono-Regular.ttf in Resources */,
+				C23AF277288D58190032EF88 /* RobotoMono-Regular.ttf in Resources */,
+				C23AF27D288D58190032EF88 /* Anonymous Pro.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,12 +1133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C226EA692865FFAB0084BD60 /* CGRect+DefaultWindowSize.swift in Sources */,
-				C270DA8B2870A7D4004F987B /* SNBackgroundType.swift in Sources */,
 				C226EA562864EA190084BD60 /* AppDelegate.swift in Sources */,
+				C23AF287288D6FD60032EF88 /* SNWatermarkView.swift in Sources */,
 				C20AD32528787EFE00DCF3E2 /* NSFont+SystemFontOfSizeDesign.swift in Sources */,
 				C20AD350287DFE2500DCF3E2 /* SNGradientGrip.swift in Sources */,
 				C2823A30286CF90A007B1CF1 /* UserDefaults+KeyExists.swift in Sources */,
+				C2F080D728970D22001E453B /* SNCanvasScrollView.swift in Sources */,
 				C2C4188728843BC70080EC6A /* NSAppearnace+IsDark.swift in Sources */,
+				C23A7A85289C496F00E94001 /* SNInLineMessage.swift in Sources */,
 				C270DA9C28717EF6004F987B /* SNSolidColour.swift in Sources */,
 				C20AD337287AED5800DCF3E2 /* SNButtonDarkAppearanceView.swift in Sources */,
 				C20AD339287AEEF500DCF3E2 /* SNButtonColourfulControlsView.swift in Sources */,
@@ -838,6 +1148,9 @@
 				C270DAA8287352DB004F987B /* SNScrollView.swift in Sources */,
 				C226EA9F286A4FE90084BD60 /* SNEmptyViewController.swift in Sources */,
 				C20AD319287633C400DCF3E2 /* NSFont+SystemFontOfSizeWeightDesign.swift in Sources */,
+				C22C8DED28870CA60069A103 /* SNBackground.swift in Sources */,
+				C22C8DF5288852040069A103 /* CanvasManager.swift in Sources */,
+				C29FE271288DD13F007473F3 /* SNAspectRatio.swift in Sources */,
 				C2E51BA1286EF9C30001A0B8 /* SNBackgroundSettingsViewController.swift in Sources */,
 				C226EA9D286A4CC40084BD60 /* SNSettingsViewController.swift in Sources */,
 				C20AD32E287AD94700DCF3E2 /* AnyView+SNButtonView.swift in Sources */,
@@ -846,32 +1159,42 @@
 				C20AD340287B0E1C00DCF3E2 /* SNButtonColourView.swift in Sources */,
 				C20AD2FC2874281200DCF3E2 /* SNTableViewController.swift in Sources */,
 				C20AD31728762E3D00DCF3E2 /* SNWindowSettingsPaddingTableCellView.swift in Sources */,
+				C29FE2822891A5AA007473F3 /* UserDefaults+SNImage.swift in Sources */,
 				C20AD33C287AF94600DCF3E2 /* SNButtonGraphiteControlsView.swift in Sources */,
 				C270DA872870A2B2004F987B /* CacheManager+Background.swift in Sources */,
-				C270DA982870C436004F987B /* SNBackgroundImageType.swift in Sources */,
 				C2C41882288431DE0080EC6A /* SNImageView.swift in Sources */,
 				C226EAAC286B68620084BD60 /* SNCanvasBackgroundView.swift in Sources */,
 				C20AD329287A072700DCF3E2 /* SNBackgroundSettingsBackgroundTableCellView.swift in Sources */,
 				C20AD30B2875F82900DCF3E2 /* SNButton.swift in Sources */,
 				C2823A2E286CF84E007B1CF1 /* SNWelcomeViewController.swift in Sources */,
 				C2C4188528843B850080EC6A /* NSAppearance+IsLight.swift in Sources */,
+				C29FE275288DD776007473F3 /* SNButtonAspectRatioView.swift in Sources */,
+				C22C8E1C288ADB590069A103 /* Float+CGFloat.swift in Sources */,
 				C20AD3572880743200DCF3E2 /* SNBackgroundSettingsImageTableCellView.swift in Sources */,
 				C20AD30728747E7A00DCF3E2 /* SNWindowSettingsTitleTableCellView.swift in Sources */,
+				C2F080C828944991001E453B /* CacheManager+Canvas.swift in Sources */,
 				C270DAAD287364B6004F987B /* SNLabel.swift in Sources */,
 				C270DA8D2870A83D004F987B /* SNGradient.swift in Sources */,
+				C23A7A8B289D8C3A00E94001 /* SNColourPickerDelegate.swift in Sources */,
 				C20AD32328774EB300DCF3E2 /* SNEditorSettingsFontTableCellView.swift in Sources */,
 				C20AD3272878897700DCF3E2 /* SNEditorSettingsLineNumberTableCellView.swift in Sources */,
 				C226EAB5286B9D930084BD60 /* NSWindow.StyleMask+DefaultStyleMask.swift in Sources */,
+				C2F080CC28967E98001E453B /* CacheManager+CanvasSize.swift in Sources */,
 				C20AD347287B683500DCF3E2 /* SNButtonGradientView.swift in Sources */,
-				C270DA962870C41E004F987B /* SNBackgroundGradientType.swift in Sources */,
+				C2F080CE28967F28001E453B /* UserDefaults+SNAspectRatio.swift in Sources */,
 				C2E51B9D286EF98F0001A0B8 /* SNWindowSettingsViewController.swift in Sources */,
 				C226EA652864EAA40084BD60 /* SNSplitViewController.swift in Sources */,
 				C2C4188928843F410080EC6A /* SNCanvasView.swift in Sources */,
+				C23AF284288D62510032EF88 /* SNIntegerNumberFormatter.swift in Sources */,
 				C20AD3012874775500DCF3E2 /* SNSettingsTableCellView.swift in Sources */,
 				C20AD331287ADB3700DCF3E2 /* SNButtonAutomaticAppearanceView.swift in Sources */,
 				C270DA7F2870A133004F987B /* SNSettingsBackgroundView.swift in Sources */,
+				C23AF28F288D94860032EF88 /* SNBackgroundType.swift in Sources */,
+				C2F080D028968300001E453B /* SNSizeCustomSettingsTableCellView.swift in Sources */,
 				C226EAB1286B9A190084BD60 /* ToolbarManager.swift in Sources */,
+				C29FE27D288EFBF3007473F3 /* SNDynamicImage.swift in Sources */,
 				C226EA72286607AC0084BD60 /* SNCanvasViewController.swift in Sources */,
+				C23A7A8E289D926400E94001 /* NSRect+With.swift in Sources */,
 				C20AD31C2876D0D900DCF3E2 /* NSAppearance+CurrentIn.swift in Sources */,
 				C20AD3132876247500DCF3E2 /* SNWindowSettingsControlsTableCellView.swift in Sources */,
 				C2C4188C288453090080EC6A /* SNTextView.swift in Sources */,
@@ -880,11 +1203,18 @@
 				C20AD343287B131E00DCF3E2 /* SNBackgroundSettingsSolidColourTableCellView.swift in Sources */,
 				C2E51BA9286EFA580001A0B8 /* SNWatermarkSettingsViewController.swift in Sources */,
 				C270DAA328719BDF004F987B /* SNSettingsToolbarSeparatorView.swift in Sources */,
+				C2F080D4289706A3001E453B /* SNClipView.swift in Sources */,
+				C23AF28D288D8E710032EF88 /* UserDefaults+SNGradient.swift in Sources */,
 				C20AD335287AECD300DCF3E2 /* SNButtonLightAppearanceView.swift in Sources */,
+				C29FE2802891A330007473F3 /* UserDefaults+SNSolidColour.swift in Sources */,
+				C22C8DFA28893A230069A103 /* NSButton+IsOn.swift in Sources */,
 				C20AD345287B65D200DCF3E2 /* SNBackgroundSettingsGradientTableCellView.swift in Sources */,
+				C29FE27A288EF623007473F3 /* SNWindowView.swift in Sources */,
 				C20AD315287626EE00DCF3E2 /* SNWindowSettingsOpacityTableCellView.swift in Sources */,
 				C20AD33E287AFA0B00DCF3E2 /* SNButtonNoneControlsView.swift in Sources */,
 				C20AD3092874963700DCF3E2 /* SNWindowSettingsAppearanceTableCellView.swift in Sources */,
+				C22C8E1F288B09470069A103 /* NSSwitch.swift in Sources */,
+				C2F080DA2897C31C001E453B /* SNColourPickerViewController.swift in Sources */,
 				C20AD3052874786A00DCF3E2 /* SNSettingsTableCellViewHeader.swift in Sources */,
 				C2E51B9F286EF9AE0001A0B8 /* SNEditorSettingsViewController.swift in Sources */,
 				C270DA812870A226004F987B /* CacheManager.swift in Sources */,
@@ -893,14 +1223,18 @@
 				C270DA842870A23D004F987B /* PresetManager.swift in Sources */,
 				C270DA902870BFB6004F987B /* RGB+HSV.swift in Sources */,
 				C2E51BA3286EF9DC0001A0B8 /* SNSizeSettingsViewController.swift in Sources */,
+				C23AF266288B1BA40032EF88 /* CacheManager+Editor.swift in Sources */,
+				C22C8DF328873FCD0069A103 /* CacheManager+Window.swift in Sources */,
+				C23A7A88289C595600E94001 /* SNNewPresetViewController.swift in Sources */,
 				C20AD30E28760D7800DCF3E2 /* SNButtonStyle.swift in Sources */,
 				C20AD31028760D8B00DCF3E2 /* ButtonStyle+SNButton.swift in Sources */,
 				C270DA932870C0A1004F987B /* CAGradientLayer+CalculatePoints.swift in Sources */,
 				C270DAAA28735527004F987B /* SNSettingsDividerView.swift in Sources */,
 				C226EA922869FD060084BD60 /* NSImage+SystemSymbolName.swift in Sources */,
 				C226EA672865FDBE0084BD60 /* main.swift in Sources */,
+				C23AF292288DCAAC0032EF88 /* SNSizeAspectRatioSettingsTableCellView.swift in Sources */,
 				C20AD3212877413900DCF3E2 /* SNEditorSettingsThemeTableCellView.swift in Sources */,
-				C270DA9A2870C8BD004F987B /* SNBackgroundColourType.swift in Sources */,
+				C22C8DF0288711760069A103 /* NSView+BackgroundColour.swift in Sources */,
 				C2C4187F2881C18B0080EC6A /* NSAnimationContext+RunAnimationGroupAfter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1030,9 +1364,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = DY2GQFY855;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snippet-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -1055,12 +1392,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SnippetRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = DY2GQFY855;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snippet-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -1109,17 +1450,13 @@
 				kind = branch;
 			};
 		};
-		C2C418982885E75A0080EC6A /* XCRemoteSwiftPackageReference "Splash" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JohnSundell/Splash";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C22C8DDB2886DC2D0069A103 /* Splash */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Splash;
+		};
 		C2C41878288087980080EC6A /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C2C41877288087980080EC6A /* XCRemoteSwiftPackageReference "Kingfisher" */;

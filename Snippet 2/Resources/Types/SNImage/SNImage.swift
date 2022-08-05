@@ -8,11 +8,18 @@
 import Cocoa
 import Kingfisher
 
-class SNImage {
+class SNImage: SNBackground, Codable {
     var path: [URL]
     var thumbnail: String
     var dynamic: Bool = false
     var preset: Int?
+    
+    var isCached: Bool {
+        let lightCached = ImageCache.default.isCached(forKey: path.first!.absoluteString)
+        let darkCached = ImageCache.default.isCached(forKey: path.last!.absoluteString)
+        
+        return lightCached && darkCached
+    }
     
     private init(path: [URL?], thumbnail: String, preset: Int? = nil) {
         self.path = path.compactMap { $0 }
@@ -126,4 +133,94 @@ extension SNImage {
             preset: 12
         )
     ]
+}
+
+extension SNImage {
+    func downloadOrLoadFromCache(progressBlock: @escaping DownloadProgressBlock, completion: @escaping (SNDynamicImage) -> Void) {
+        if isCached {
+            _loadFromCache { dynamicImage in
+                completion(dynamicImage)
+            }
+        } else {
+            _download { receivedSize, totalSize in
+                progressBlock(receivedSize, totalSize)
+            } completion: { dynamicImage in
+                completion(dynamicImage)
+            }
+        }
+    }
+    
+    private func _download(progressBlock: @escaping DownloadProgressBlock, completion: @escaping (SNDynamicImage) -> Void) {
+        var estimatedSize: Int64 = 0
+        var receivedSizeLight: Int64 = 0
+        var receivedSizeDark: Int64 = 0
+        
+        let lightResource = ImageResource(downloadURL: path.first!)
+        let darkResource = ImageResource(downloadURL: path.last!)
+        
+        KingfisherManager.shared.retrieveImage(with: lightResource) { receivedSize, totalSize in
+            estimatedSize = totalSize * Int64((self.path.count))
+            receivedSizeLight = receivedSize
+            progressBlock(receivedSizeLight, estimatedSize)
+        } completionHandler: { lightResult in
+            KingfisherManager.shared.retrieveImage(with: darkResource) { receivedSize, totalSize in
+                receivedSizeDark = receivedSize
+                progressBlock(receivedSizeLight + receivedSizeDark, estimatedSize)
+            } completionHandler: { darkResult in
+                completion(self._dynamicImageFrom(lightResult, darkResult))
+            }
+        }
+    }
+    
+    private func _loadFromCache(completion: @escaping (SNDynamicImage) -> Void) {
+        ImageCache.default.retrieveImage(forKey: path.first!.absoluteString) { lightResult in
+            ImageCache.default.retrieveImage(forKey: self.path.last!.absoluteString) { darkResult in
+                completion(self._dynamicImageFrom(lightResult, darkResult))
+            }
+        }
+    }
+    
+    private func _dynamicImageFrom(_ lightResult: Result<RetrieveImageResult, KingfisherError>, _ darkResult: Result<RetrieveImageResult, KingfisherError>) -> SNDynamicImage {
+        switch lightResult {
+        case .success(let lightValue):
+            let light = lightValue.image
+            
+            switch darkResult {
+            case .success(let darkValue):
+                let dark = darkValue.image
+                return SNDynamicImage(light: light, dark: dark)
+            case .failure(_):
+                return SNDynamicImage(light: light, dark: light)
+            }
+        case .failure(_):
+            return SNDynamicImage()
+        }
+    }
+    
+    private func _dynamicImageFrom(_ lightResult: Result<ImageCacheResult, KingfisherError>, _ darkResult: Result<ImageCacheResult, KingfisherError>) -> SNDynamicImage {
+        switch lightResult {
+        case .success(let lightValue):
+            let light = lightValue.image
+            
+            switch darkResult {
+            case .success(let darkValue):
+                let dark = darkValue.image
+                return SNDynamicImage(light: light, dark: dark)
+            case .failure(_):
+                return SNDynamicImage(light: light, dark: light)
+            }
+        case .failure(_):
+            return SNDynamicImage()
+        }
+    }
+}
+
+extension SNImage {
+    func applyBackground(to view: SNImageView) {
+        downloadOrLoadFromCache { receivedSize, totalSize in
+            // Do nothing...
+        } completion: { dynamicImage in
+            view.dynamicImage = dynamicImage
+        }
+    }
 }

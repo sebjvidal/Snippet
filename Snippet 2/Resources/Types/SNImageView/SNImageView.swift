@@ -14,12 +14,15 @@ class SNImageView: NSImageView {
         }
     }
     
+    var gradientLayer = CAGradientLayer()
+    
     override var intrinsicContentSize: NSSize {
         .zero
     }
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
+        _setupGradientView()
     }
     
     required init?(coder: NSCoder) {
@@ -28,6 +31,17 @@ class SNImageView: NSImageView {
         if let image = image {
             self.image = image
         }
+    }
+    
+    private func _setupGradientView() {
+        let gradientView = NSView()
+        gradientView.wantsLayer = true
+        gradientView.autoresizingMask = [.width, .height]
+        gradientView.layer?.addSublayer(gradientLayer)
+        
+        gradientLayer.autoresizingMask = [.layerWidthSizable, .layerHeightSizable]
+        
+        addSubview(gradientView)
     }
     
     override func viewDidChangeEffectiveAppearance() {
@@ -46,6 +60,8 @@ class SNImageView: NSImageView {
             self.wantsLayer = true
             
             super.image = isLight ? light : dark
+        } else {
+            self.layer?.contents = nil
         }
     }
 }

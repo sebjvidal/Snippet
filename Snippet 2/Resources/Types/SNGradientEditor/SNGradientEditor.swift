@@ -12,6 +12,7 @@ class SNGradientEditor: NSView {
         didSet {
             _updateGradientLayer()
             _updateGradientGrips()
+            layout()
         }
     }
     
@@ -62,6 +63,7 @@ class SNGradientEditor: NSView {
     }
     
     private func _updateGradientLayer() {
+        NSAnimationContext().duration = 0
         _gradientLayer.colors = gradient.colours.map { $0.cgColor }
     }
     
@@ -72,7 +74,7 @@ class SNGradientEditor: NSView {
         
         _gradientGrips.removeAll()
         
-        for (colour, location) in zip(gradient.colours, gradient.locations) {
+        for colour in gradient.colours {
             let grip = SNGradientGrip()
             grip.colour = colour
             

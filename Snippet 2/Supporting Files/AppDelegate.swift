@@ -11,7 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var _window: NSWindow!
     private var _observer: NSKeyValueObservation!
 
-    // MARK: ApplicationDidFinishLaunching
+    // MARK: applicationDidFinishLaunching
     func applicationDidFinishLaunching(_ notification: Notification) {
         let splitView = SNSplitViewController()
         
@@ -19,7 +19,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         _window.styleMask = .defaultStyleMask
         _window.setFrame(.defaultWindowSize, display: true)
         _window.setFrameAutosaveName("MainWindow")
-        _window.backgroundColor = .clear
         _window.makeKeyAndOrderFront(nil)
         
         _setupToolbar()
@@ -29,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         ToolbarManager.shared.setupToolbar()
     }
     
-    // MARK: ApplicationShouldTerminateAfterLastWindowClosed
+    // MARK: applicationShouldTerminateAfterLastWindowClosed
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }

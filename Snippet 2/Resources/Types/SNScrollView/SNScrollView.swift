@@ -18,13 +18,8 @@ class SNScrollView: NSScrollView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: IsFlipped
+    // MARK: isFlipped
     override var isFlipped: Bool {
         return true
-    }
-    
-    override func layout() {
-        super.layout()
-        hasVerticalScroller = true
     }
 }

@@ -8,7 +8,7 @@
 import Cocoa
 import SwiftUI
 
-class SNSolidColour {
+class SNSolidColour: SNBackground, Codable {
     var colour: HSV
     var preset: Int?
     
@@ -33,6 +33,13 @@ extension SNSolidColour {
         SNSolidColour(colour: HSV(h: 028, s: 0.656, v: 0.855), preset: 4),
         SNSolidColour(colour: HSV(h: 209, s: 0.560, v: 0.820), preset: 5),
     ]
+}
+
+extension SNSolidColour {
+    func applyBackground(to view: SNImageView) {
+        NSAnimationContext().duration = 0
+        view.layer?.backgroundColor = cgColor
+    }
 }
 
 extension SNSolidColour {

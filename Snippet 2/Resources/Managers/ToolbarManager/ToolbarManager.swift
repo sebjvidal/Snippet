@@ -28,8 +28,6 @@ class ToolbarManager: NSObject, NSToolbarDelegate {
         toolbar.displayMode = .iconOnly
         toolbar.showsBaselineSeparator = true
         
-        _window.title = "Snippet"
-        _window.subtitle = "Untitled"
         _window.toolbar = toolbar
         _window.toolbarStyle = .unified
         _window.titleVisibility = .hidden
@@ -80,6 +78,8 @@ class ToolbarManager: NSObject, NSToolbarDelegate {
         case NSToolbarItem.Identifier("PresetMenu"):
             let newItem = NSMenuItem(title: "New Preset", action: nil, keyEquivalent: "")
             newItem.image = NSImage(systemSymbolName: "plus")
+            newItem.action = #selector(_newPreset)
+            newItem.target = self
             
             let editItem = NSMenuItem(title: "Edit Preset Name", action: nil, keyEquivalent: "")
             editItem.image = NSImage(systemSymbolName: "pencil")
@@ -145,6 +145,12 @@ class ToolbarManager: NSObject, NSToolbarDelegate {
         }
         
         return NSToolbarItem(itemIdentifier: itemIdentifier)
+    }
+    
+    @objc private func _newPreset() {
+        let newPresetViewController = SNNewPresetViewController()
+        _window.preventsApplicationTerminationWhenModal = false
+        _window.contentViewController?.presentAsSheet(newPresetViewController)
     }
     
     @objc private func _nop() {

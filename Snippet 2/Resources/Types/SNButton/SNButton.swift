@@ -62,6 +62,8 @@ class SNButton: NSView, ObservableObject {
     
     var isSelectable: Bool = false
     
+    var selectionGroup: AnyHashable? = nil
+    
     @Published var view: AnyView = .emptyView
 
     // MARK: Init
@@ -75,6 +77,7 @@ class SNButton: NSView, ObservableObject {
         _setupHostingView()
         _setupProgressIndicator()
         _setupLabel()
+        _initObservers()
     }
 
     required init?(coder: NSCoder) {
@@ -116,14 +119,60 @@ class SNButton: NSView, ObservableObject {
 
     private func _setupLabel() {
         _label = SNLabel()
+        _label.alignment = .center
         _label.translatesAutoresizingMaskIntoConstraints = false
 
         addSubview(_label)
 
         NSLayoutConstraint.activate([
             _label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            _label.topAnchor.constraint(equalTo: bottomAnchor, constant: 8)
+            _label.topAnchor.constraint(equalTo: bottomAnchor, constant: 8),
+            _label.widthAnchor.constraint(equalTo: widthAnchor)
         ])
+    }
+    
+    fileprivate var _uuid = UUID()
+    
+    private func _initObservers() {
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(_didBecomeKeyWindow),
+            name: NSWindow.didBecomeKeyNotification, object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(_didResignKeyWindow),
+            name: NSWindow.didResignKeyNotification, object: nil
+        )
+        
+        NotificationCenter.default.addObserver(forName: .init(rawValue: "snButtonTapped"), object: nil, queue: nil) { notif in
+            guard let group = notif.userInfo?["selectionGroup"] as? AnyHashable else {
+                return
+            }
+            
+            guard let uuid = notif.userInfo?["selectedButtonUUID"] as? UUID else {
+                return
+            }
+            
+            if group == self.selectionGroup && uuid != self._uuid {
+                self.isSelected = false
+            }
+        }
+    }
+    
+    @objc private func _didBecomeKeyWindow() {
+        if isSelected {
+            NSAppearance.current(in: self).performAsCurrentDrawingAppearance {
+                layer?.borderColor = NSColor.controlAccentColor.cgColor
+            }
+        }
+    }
+    
+    @objc private func _didResignKeyWindow() {
+        if isSelected {
+            NSAppearance.current(in: self).performAsCurrentDrawingAppearance {
+                layer?.borderColor = NSColor(named: "InactiveSelected")?.cgColor
+            }
+        }
     }
     
     @Published fileprivate var _frame = CGRect()
@@ -140,21 +189,23 @@ class SNButton: NSView, ObservableObject {
     }
 
     private func _updateButton() {
-        layer?.borderWidth = isSelected && isSelectable ? 2 : 1
-        layer?.borderColor = isSelected && isSelectable ? NSColor.controlAccentColor.cgColor : NSColor(named: "GradientButtonBorder")?.cgColor
-    }
-
-    fileprivate func _invalidateOthers() {
-        for subview in superview!.subviews {
-            if let subview = subview as? SNButton {
-                if NSAppearance.current(in: self).isLight {
-                    NSAppearance().performAsCurrentDrawingAppearance {
-                        subview.isSelected = false
-                    }
-                } else {
-                    subview.isSelected = false
-                }
+        NSAppearance.current(in: self).performAsCurrentDrawingAppearance {
+            layer?.borderWidth = isSelected && isSelectable ? 2 : 1
+            
+            if NSApplication.shared.windows.first?.isKeyWindow == true {
+                layer?.borderColor = isSelected && isSelectable ? NSColor.controlAccentColor.cgColor : NSColor(named: "GradientButtonBorder")?.cgColor
+            } else {
+                layer?.borderColor = isSelected && isSelectable ? NSColor(named: "InactiveSelected")?.cgColor : NSColor(named: "GradientButtonBorder")?.cgColor
             }
+        }
+    }
+    
+    @objc fileprivate func _invalidateOthers() {
+        if let group = selectionGroup {
+            NotificationCenter.default.post(name: .init(rawValue: "snButtonTapped"), object: nil, userInfo: [
+                "selectionGroup": group,
+                "selectedButtonUUID": _uuid
+            ])
         }
     }
 }
@@ -166,19 +217,21 @@ private struct _SNButton: View {
     var body: some View {
         ZStack {
             Button(action: _action) {
-                snButton.view
+                ZStack {
+                    snButton.view
+                    
+                    if let image = snButton.accessoryImage {
+                        Image(nsImage: image)
+                            .resizable()
+                            .renderingMode(.template)
+                            .foregroundColor(.white)
+                            .frame(width: 12, height: 12)
+                            .padding(6)
+                            .frame(width: snButton._frame.width, height: snButton._frame.height, alignment: .bottomTrailing)
+                    }
+                }
             }
             .buttonStyle(.snButton)
-            
-            if let image = snButton.accessoryImage {
-                Image(nsImage: image)
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(.white)
-                    .frame(width: 12, height: 12)
-                    .padding(6)
-                    .frame(width: snButton._frame.width, height: snButton._frame.height, alignment: .bottomTrailing)
-            }
             
             Color.black
                 .opacity(snButton.isLoading ? 0.5 : 0)
@@ -187,13 +240,14 @@ private struct _SNButton: View {
     }
 
     private func _action() {
-        if snButton.isSelectable {
-            snButton._invalidateOthers()
-            snButton.isSelected = true
-        }
-        
         if let action = snButton.action {
             action()
+        }
+        
+        snButton._invalidateOthers()
+        
+        if snButton.isSelectable {
+            snButton.isSelected = true
         }
     }
     
